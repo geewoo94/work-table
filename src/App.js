@@ -63,6 +63,13 @@ function App() {
         style={{ height: 500 }}
       />
       <button onClick={handleTransform}>변환</button>
+      <div>
+        {result.map((item) => (
+          <div>
+            {item.name} : {item.result}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
